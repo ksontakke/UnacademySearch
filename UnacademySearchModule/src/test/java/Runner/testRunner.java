@@ -1,15 +1,12 @@
 package Runner;
 
-import org.junit.runner.RunWith;
-
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/Feature/Search.feature")
  
- 
-public class testRunner 
+
+@CucumberOptions(features="src/test/resources/Feature/Search.feature",glue= {"stepDefinition"},tags= {"@smoke"})
+public class testRunner extends AbstractTestNGCucumberTests
 {
 	
 }

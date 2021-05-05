@@ -1,6 +1,6 @@
 Feature: Unacademy Website
 
-
+@smoke
 Scenario: User wants to search for particular Course
 Given User is on Search Page
 When User enters course name
