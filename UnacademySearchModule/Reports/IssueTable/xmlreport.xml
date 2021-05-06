@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="120.413699">
+<testcase classname="Report an issue" name="User wants to Report An Issue" time="50.659623">
+<system-out><![CDATA[Given User is on the search Page............................................passed
+When User clicks on Report an issue.........................................passed
+Then User navigates to Report an issue page.................................passed
+And User Reports an Issue...................................................passed
+And Submits it..............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Report an issue" name="User wants to Report Issue" time="69.754076">
+<system-out><![CDATA[Given User is on the search Page............................................passed
+When User clicks on issue hyperlink.........................................passed
+Then User navigates to report an issue window...............................passed
+And User Reports an Issue using table.......................................passed
+And Submit..................................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

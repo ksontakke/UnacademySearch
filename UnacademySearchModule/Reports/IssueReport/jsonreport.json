@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User wanted to Report An Issue",
+        "description": "",
+        "id": "report-issue-without-message;user-wanted-to-report-an-issue",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14256659600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the particular course Page",
+            "match": {
+              "location": "ReportIssue.user_is_on_the_particular_course_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3300521100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Report an issue link",
+            "match": {
+              "location": "ReportIssue.user_clicks_on_Report_an_issue_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5044596400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to Report page",
+            "match": {
+              "location": "ReportIssue.user_navigates_to_Report_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5001566100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Reports an Issue without any message",
+            "match": {
+              "location": "ReportIssue.user_Reports_an_Issue_without_any_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22769000,
+              "error_message": "java.lang.AssertionError: expected [false] but found [true]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertFalse(Assert.java:65)\r\n\tat org.testng.Assert.assertFalse(Assert.java:75)\r\n\tat stepDefinition.ReportIssue.click_on_submit(ReportIssue.java:75)\r\n\tat ✽.And Click on submit(src/test/resources/Feature/IssueReport.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Click on submit",
+            "match": {
+              "location": "ReportIssue.click_on_submit()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@emptyissue"
+          }
+        ]
+      }
+    ],
+    "name": "Report issue without message",
+    "description": "",
+    "id": "report-issue-without-message",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/IssueReport.feature"
+  }
+]

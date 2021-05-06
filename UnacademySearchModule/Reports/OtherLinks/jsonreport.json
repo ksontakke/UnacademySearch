@@ -1,0 +1,170 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Driver installed",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10268248800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on search window",
+            "match": {
+              "location": "OtherLinksTest.user_is_on_search_window()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User wants to Check other Links",
+        "description": "",
+        "id": "search-for-more-related-content;user-wants-to-check-other-links",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8210335700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on Other Links",
+            "match": {
+              "location": "OtherLinksTest.user_clicks_on_Other_Links()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5095409200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on Facebook logo",
+            "match": {
+              "location": "OtherLinksTest.user_clicks_on_Facebook_logo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5898823500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User navigates to facebook page of the Unacademy website",
+            "match": {
+              "location": "OtherLinksTest.user_navigates_to_facebook_page_of_the_Unacademy_website()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@otherlinks"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Driver installed",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 14661337700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on search window",
+            "match": {
+              "location": "OtherLinksTest.user_is_on_search_window()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "User wants to See All the Educators on Search Page and plays a preview video",
+        "description": "",
+        "id": "search-for-more-related-content;user-wants-to-see-all-the-educators-on-search-page-and-plays-a-preview-video",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6091881900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clicks on See All",
+            "match": {
+              "location": "OtherLinksTest.user_clicks_on_See_All()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5012364300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User Gets all the Educators name",
+            "match": {
+              "location": "OtherLinksTest.user_Gets_all_the_Educators_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6076447200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User Clicks on particular Educator",
+            "match": {
+              "location": "OtherLinksTest.user_Clicks_on_particular_Educator()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32577077400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User Clicks on a video",
+            "match": {
+              "location": "OtherLinksTest.user_Clicks_on_a_video()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@video"
+          }
+        ]
+      }
+    ],
+    "name": "Search for more related content",
+    "description": "",
+    "id": "search-for-more-related-content",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/OtherLinks.feature"
+  }
+]

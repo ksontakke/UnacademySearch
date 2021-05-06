@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="92.587121">
+<testcase classname="Unacademy Website" name="User wants to search for particular Course" time="51.82486">
+<system-out><![CDATA[Given User is on Search Page................................................passed
+When User enters course name................................................passed
+And User clicks on Course Hyperlink.........................................passed
+Then User navigates to the Course page......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unacademy Website" name="User wants to search all the courses from a particular educator" time="40.762261">
+<system-out><![CDATA[Given user is on the Unacademy Home Page....................................passed
+When User enters Educators name.............................................passed
+And User clicks on Educators Hyperlink......................................passed
+Then User navigates to Educators profile page...............................passed
+]]></system-out>
+</testcase>
+</testsuite>

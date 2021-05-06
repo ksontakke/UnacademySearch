@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="27.626112">
+<testcase classname="Report issue without message" name="User wanted to Report An Issue" time="27.626112">
+<failure message="java.lang.AssertionError: expected [false] but found [true]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertFalse(Assert.java:65)&#13;&#10;&#9;at org.testng.Assert.assertFalse(Assert.java:75)&#13;&#10;&#9;at stepDefinition.ReportIssue.click_on_submit(ReportIssue.java:75)&#13;&#10;&#9;at ✽.And Click on submit(src/test/resources/Feature/IssueReport.feature:10)&#13;&#10;"><![CDATA[Given User is on the particular course Page.................................passed
+When User clicks on Report an issue link....................................passed
+Then User navigates to Report page..........................................passed
+And User Reports an Issue without any message...............................passed
+And Click on submit.........................................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at org.testng.Assert.assertFalse(Assert.java:75)
+	at stepDefinition.ReportIssue.click_on_submit(ReportIssue.java:75)
+	at ✽.And Click on submit(src/test/resources/Feature/IssueReport.feature:10)
+]]></failure>
+</testcase>
+</testsuite>

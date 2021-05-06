@@ -1,0 +1,195 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Installed driver",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3736210800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Course page",
+            "match": {
+              "location": "CourseDetailsTest.user_is_on_the_Course_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User wants see free classes and test",
+        "description": "",
+        "id": "course-data-and-syllabus;user-wants-see-free-classes-and-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14849384200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on free classes and test",
+            "match": {
+              "location": "CourseDetailsTest.user_click_on_free_classes_and_test()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12228875300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should see the free courses",
+            "match": {
+              "location": "CourseDetailsTest.user_should_see_the_free_courses()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@freeclass"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Installed driver",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1721228300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Course page",
+            "match": {
+              "location": "CourseDetailsTest.user_is_on_the_Course_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "User wants see Quick cources",
+        "description": "",
+        "id": "course-data-and-syllabus;user-wants-see-quick-cources",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19082560600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click on Quick cources",
+            "match": {
+              "location": "CourseDetailsTest.user_click_on_Quick_cources()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9222672700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see the Quick cources",
+            "match": {
+              "location": "CourseDetailsTest.user_should_see_the_Quick_cources()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@quick"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Installed driver",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1700362400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Course page",
+            "match": {
+              "location": "CourseDetailsTest.user_is_on_the_Course_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "User wants see course Syllabus",
+        "description": "",
+        "id": "course-data-and-syllabus;user-wants-see-course-syllabus",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18853849000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click on Syllabus",
+            "match": {
+              "location": "CourseDetailsTest.user_click_on_Syllabus()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5197674500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should see the course syllabus",
+            "match": {
+              "location": "CourseDetailsTest.user_should_see_the_course_syllabus()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@syllabus"
+          }
+        ]
+      }
+    ],
+    "name": "Course data and syllabus",
+    "description": "",
+    "id": "course-data-and-syllabus",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/CourseDetails.feature"
+  }
+]

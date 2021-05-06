@@ -1,0 +1,190 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Installed driver",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31962728100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the search Page",
+            "match": {
+              "location": "IssueTableTest.user_is_on_the_search_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "User wants to Report An Issue",
+        "description": "",
+        "id": "report-an-issue;user-wants-to-report-an-issue",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3224006600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on Report an issue",
+            "match": {
+              "location": "IssueTableTest.user_clicks_on_Report_an_issue()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5045112300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to Report an issue page",
+            "match": {
+              "location": "IssueTableTest.user_navigates_to_Report_an_issue_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 195253000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Reports an Issue",
+            "match": {
+              "location": "IssueTableTest.user_Reports_an_Issue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10232522700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Submits it",
+            "match": {
+              "location": "IssueTableTest.submits_it()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@issue"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Installed driver",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 48141333700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the search Page",
+            "match": {
+              "location": "IssueTableTest.user_is_on_the_search_Page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "User wants to Report Issue",
+        "description": "",
+        "id": "report-an-issue;user-wants-to-report-issue",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3212466000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks on issue hyperlink",
+            "match": {
+              "location": "IssueTableTest.user_clicks_on_issue_hyperlink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5035313400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User navigates to report an issue window",
+            "match": {
+              "location": "IssueTableTest.user_navigates_to_report_an_issue_window()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3154560700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User Reports an Issue using table",
+            "match": {
+              "location": "IssueTableTest.user_Reports_an_Issue_using_table(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "This is an issue"
+                ],
+                "line": 20
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10210402100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Submit",
+            "match": {
+              "location": "IssueTableTest.submit()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@tableissue"
+          }
+        ]
+      }
+    ],
+    "name": "Report an issue",
+    "description": "",
+    "id": "report-an-issue",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/IssueTable.feature"
+  }
+]

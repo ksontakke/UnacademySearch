@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="86.592818">
+<testcase classname="Course data and syllabus" name="User wants see free classes and test" time="30.81447">
+<system-out><![CDATA[Given User is on the Course page............................................passed
+When User click on free classes and test....................................passed
+Then User should see the free courses.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Course data and syllabus" name="User wants see Quick cources" time="30.026462">
+<system-out><![CDATA[Given User is on the Course page............................................passed
+When User click on Quick cources............................................passed
+Then User should see the Quick cources......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Course data and syllabus" name="User wants see course Syllabus" time="25.751886">
+<system-out><![CDATA[Given User is on the Course page............................................passed
+When User click on Syllabus.................................................passed
+Then User should see the course syllabus....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

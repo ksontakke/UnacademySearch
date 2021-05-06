@@ -1,0 +1,148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User wants to search for particular Course",
+        "description": "",
+        "id": "unacademy-website;user-wants-to-search-for-particular-course",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25215168800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Search Page",
+            "match": {
+              "location": "CourseEducator.user_is_on_Search_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9148308200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters course name",
+            "match": {
+              "location": "CourseEducator.user_enters_course_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3129133800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Course Hyperlink",
+            "match": {
+              "location": "CourseEducator.user_clicks_on_Course_Hyperlink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14332249500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to the Course page",
+            "match": {
+              "location": "CourseEducator.user_navigates_to_the_Course_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@course"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "User wants to search all the courses from a particular educator",
+        "description": "",
+        "id": "unacademy-website;user-wants-to-search-all-the-courses-from-a-particular-educator",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18605238600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on the Unacademy Home Page",
+            "match": {
+              "location": "CourseEducator.user_is_on_the_Unacademy_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3685986300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters Educators name",
+            "match": {
+              "location": "CourseEducator.user_enters_Educators_name(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sahil Khandelwal"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4130267400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on Educators Hyperlink",
+            "match": {
+              "location": "CourseEducator.user_clicks_on_Educators_Hyperlink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14340768400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User navigates to Educators profile page",
+            "match": {
+              "location": "CourseEducator.user_navigates_to_Educators_profile_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@educator"
+          }
+        ]
+      }
+    ],
+    "name": "Unacademy Website",
+    "description": "",
+    "id": "unacademy-website",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/CourseEducator.feature"
+  }
+]
