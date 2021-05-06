@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Runner.testRunner">
+      <class name="stepDefinition.searchStepDef">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario"/>
-          <include name="tearDownClass"/>
+          <include name="user_is_on_a_Course_page"/>
+          <include name="user_should_see_the_free_courses"/>
+          <include name="user_is_on_the_Course_page"/>
+          <include name="user_click_on_Quick_cources"/>
+          <include name="user_click_on_free_classes_and_test"/>
+          <include name="user_is_on_a_Course_window"/>
+          <include name="user_click_on_Syllabus"/>
+          <include name="user_should_see_the_Quick_cources"/>
+          <include name="user_should_see_the_course_syllabus"/>
         </methods>
-      </class> <!-- Runner.testRunner -->
+      </class> <!-- stepDefinition.searchStepDef -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -24,7 +24,11 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -40,5 +44,6 @@
 	<classpathentry kind="lib" path="C:/Users/kbaburao/Desktop/SeleniumSoftware/Cucumberjars/gherkin-2.12.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/kbaburao/Desktop/SeleniumSoftware/Cucumberjars/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="C:/Users/kbaburao/Desktop/SeleniumSoftware/Cucumberjars/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kbaburao/Desktop/SeleniumSoftware/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

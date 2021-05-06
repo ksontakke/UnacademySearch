@@ -1,7 +1,5 @@
-package UnacademySearchPOM;
+package PageFactoryPOM;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -52,10 +50,10 @@ public class SearchPOM
 	@FindBy(xpath="//a[@href='https://www.facebook.com/unacademy/']")
 	WebElement facebook;
 	
-	@FindBy(xpath = "//a[normalize-space()='Syllabus']")
+	@FindBy(xpath = "//a[contains(text(),'Syllabus')]")
 	WebElement syllabus;
 	
-	@FindBy(xpath="//span[contains(text(),'Test series & Practice')]")
+	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[6]/span[1]")
 	WebElement testpractice;
 	
 	@FindBy(xpath = "//a[normalize-space()='Test series']")
@@ -78,7 +76,7 @@ public class SearchPOM
 		search.click();
 	}
 	
-	public void name(String name) throws InterruptedException
+	public void name(String name) throws Throwable
 	{
 		search.sendKeys(name);
 		Thread.sleep(3000);
@@ -118,13 +116,13 @@ public class SearchPOM
 	{
 		getapp.click();
 	}
-	public void appStore() throws InterruptedException
+	public void appStore() throws Throwable
 	{
 		appstore.click();
 		Thread.sleep(3000);
 		driver.close();
 	}
-	public void googlePlay() throws InterruptedException
+	public void googlePlay() throws Throwable
 	{
 		googleplay.click();
 		Thread.sleep(3000);
@@ -134,19 +132,20 @@ public class SearchPOM
 	{
 		otherlinks.click();
 	}
-	public void faceBook() throws InterruptedException
+	public void faceBook()
 	{
 		facebook.click();
-		Thread.sleep(3000);
-		driver.close();
 	}
 	public void courseSyllabus()
 	{
 		syllabus.click();
 	}
-	public void testPractice()
+	public void testPractice() throws Throwable
 	{
+		Thread.sleep(5000);
 		testpractice.click();
+//		Actions act= new Actions(driver);
+//		act.click(testpractice).perform();
 	}
 	public void testSeries()
 	{

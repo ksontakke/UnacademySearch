@@ -1,11 +1,9 @@
-package Runner;
+package TestRunner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
- 
-
-@CucumberOptions(features="src/test/resources/Feature/Search.feature",glue= {"stepDefinition"},tags= {"@smoke"})
+@CucumberOptions(features="src/test/resources/Feature/TestPractice.feature",glue= {"stepDefinition"})
 public class testRunner extends AbstractTestNGCucumberTests
 {
 	
