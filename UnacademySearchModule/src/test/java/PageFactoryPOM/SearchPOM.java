@@ -24,7 +24,7 @@ public class SearchPOM
 	WebElement freeoptions;
 	
 	@FindBy(xpath="//li[@data-id='library']")
-	WebElement library;
+	WebElement library1;
 	
 	@FindBy(xpath="//span[contains(text(),'Report an issue')]")
 	WebElement issue;
@@ -62,8 +62,26 @@ public class SearchPOM
 	@FindBy(linkText="Quick courses")
 	WebElement quickcourse;
 	
-	@FindBy(xpath="//a[contains(text(),'Home')]")
-	WebElement homepage;
+	@FindBy(xpath="//input[@placeholder='Enter your mobile number']")
+	WebElement mobile;
+	
+	@FindBy(xpath="//button[@class='Button__StyledButton-dg3jck-0 jerpTs']")
+	WebElement login;
+	
+	@FindBy(xpath="//button[normalize-space()='Verify OTP']")
+	WebElement verify;
+	
+	@FindBy(css = "li[data-id='schedule'] div[class='Link__StyledDiv-sc-1n9f3wx-1 kAeEiz']")
+	WebElement schedule;
+	
+	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[3]/div[1]")
+	WebElement saved;
+	
+	@FindBy(xpath = "//div[normalize-space()='Enrollments']")
+	WebElement enrollments;
+	
+	@FindBy(xpath = "//a[normalize-space()='My library']")
+	WebElement library;
 	
 	public void search(WebDriver driver)
 	{
@@ -98,7 +116,7 @@ public class SearchPOM
 	}
 	public void userCourses()
 	{
-		library.click();
+		library1.click();
 	}
 	public void issueReport()
 	{
@@ -152,8 +170,38 @@ public class SearchPOM
 		testseries.click();
 	}
 	
-	public void homePage()
+	public void enterMobile(String mob)
 	{
-		homepage.click();
+		mobile.sendKeys(mob);
+	}
+	
+	public void Login()
+	{
+		login.click();
+	}
+	
+	public void verifyOTP()
+	{
+		verify.click();
+	}
+	
+	public void CourseSchdule()
+	{
+		schedule.click();
+	}
+	
+	public void savedCourse()
+	{
+		saved.click();
+	}
+	
+	public void courseEnrolled()
+	{
+		enrollments.click();
+	}
+	
+	public void courseLibrary()
+	{
+		library1.click();
 	}
 }
