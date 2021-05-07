@@ -50,8 +50,8 @@ public class GetAppTest
 	{
 		Thread.sleep(6000);
 	    boolean appPage=driver.findElement(By.xpath("//h4[contains(text(),'Download lessons and learn anytime, anywhere with ')]")).isDisplayed();
-	    Assert.assertTrue(appPage);
+	    Assert.assertTrue(appPage);		// Check if download options available or not
 	    System.out.println("Download options available :"+appPage);
-	    driver.close();
+	    driver.close();		// Close the driver
 	}
 }

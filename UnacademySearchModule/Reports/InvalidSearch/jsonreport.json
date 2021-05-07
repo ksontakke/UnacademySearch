@@ -1,0 +1,104 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2353192500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CourseInfo.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1556599900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InvalidSearchTest.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User search for invalid data",
+        "description": "",
+        "id": "unacademy-website-invalid-search;user-search-for-invalid-data",
+        "after": [
+          {
+            "result": {
+              "duration": 5110336300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CourseInfo.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5237432900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InvalidSearchTest.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13782936900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on unacademy Search course Page",
+            "match": {
+              "location": "InvalidSearchTest.user_is_on_unacademy_Search_course_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6523019300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters invalid search data",
+            "match": {
+              "location": "InvalidSearchTest.user_enters_invalid_search_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71538000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should see blank window",
+            "match": {
+              "location": "InvalidSearchTest.user_should_see_blank_window()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@invalid"
+          }
+        ]
+      }
+    ],
+    "name": "Unacademy Website invalid search",
+    "description": "",
+    "id": "unacademy-website-invalid-search",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/InvalidSearchData.feature"
+  }
+]

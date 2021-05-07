@@ -51,7 +51,7 @@ public class IssueTableTest
 	{
 		Thread.sleep(5000);
 		boolean issuereport= driver.findElement(By.xpath("//h2[contains(text(),'Report an issue')]")).isDisplayed();
-		Assert.assertTrue(issuereport);
+		Assert.assertTrue(issuereport);		// check if the user is on report page or not
 		System.out.println("You are on issue report page");
 	}
 
@@ -60,8 +60,9 @@ public class IssueTableTest
 	public void user_Reports_an_Issue() throws Throwable 
 	{
 		SearchPOM sp = PageFactory.initElements(driver, SearchPOM.class);
-		sp.writeIssue("Some content was not loading");
+		sp.writeIssue("Some content was not loading");		// Write an issue in text area
 		System.out.println("Issue is :"+driver.findElement(By.xpath("//textarea[@placeholder='Type in your query']")).getAttribute("value"));
+		// Print the issue
 	}
 
 	@Test(priority=5)
@@ -70,7 +71,7 @@ public class IssueTableTest
 	{
 	    Thread.sleep(6000);
 		SearchPOM sp = PageFactory.initElements(driver, SearchPOM.class);
-		sp.sendIssue();
+		sp.sendIssue();		// Submit issue
 	    Thread.sleep(4000);
 	    driver.close();
 	    System.out.println("Issue submited successfully");
@@ -93,7 +94,7 @@ public class IssueTableTest
 	{
 		Thread.sleep(5000);
 		boolean issuereport1= driver.findElement(By.xpath("//h2[contains(text(),'Report an issue')]")).isDisplayed();
-		Assert.assertTrue(issuereport1);
+		Assert.assertTrue(issuereport1);		// check if the user is on report page or not
 		System.out.println("You are on issue report page");
 		
 	}
@@ -104,7 +105,7 @@ public class IssueTableTest
 	{
 		List<List<String>> data = arg1.raw();
 		SearchPOM sp = PageFactory.initElements(driver, SearchPOM.class);
-		sp.writeIssue(data.get(0).get(0));
+		sp.writeIssue(data.get(0).get(0));		// get the issue text from data table  
 		Thread.sleep(3000);
 		System.out.println("Issue is :"+driver.findElement(By.xpath("//textarea[@placeholder='Type in your query']")).getAttribute("value"));
 	}
@@ -115,7 +116,7 @@ public class IssueTableTest
 	{
 		Thread.sleep(6000);
 		SearchPOM sp = PageFactory.initElements(driver, SearchPOM.class);
-		sp.sendIssue();
+		sp.sendIssue();		// Submit issue
 	    Thread.sleep(4000);
 	    driver.close();
 	    System.out.println("Issue submited successfully");

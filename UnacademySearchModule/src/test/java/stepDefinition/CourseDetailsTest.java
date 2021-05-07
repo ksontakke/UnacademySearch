@@ -15,7 +15,6 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import PageFactoryPOM.SearchPOM;
-import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -80,7 +79,7 @@ public class CourseDetailsTest
 	public void user_should_see_the_Quick_cources() throws Throwable 
 	{
 		boolean quick=driver.getPageSource().contains("Popular Courses");
-	    System.out.println("Courses available :"+quick);
+	    System.out.println("Courses available :"+quick);		// check if you are on correct page or not
 	    Thread.sleep(5000);
 	    driver.close();
 	}
@@ -105,7 +104,7 @@ public class CourseDetailsTest
 	public void user_should_see_the_course_syllabus() throws Throwable 
 	{
 		boolean syllabus=driver.findElement(By.xpath("//h1[normalize-space()='IIT JEE Syllabus']")).isDisplayed();
-		Assert.assertTrue(syllabus);
+		Assert.assertTrue(syllabus);	// check if you are on correct page or not
 		System.out.println(syllabus);
 	    Thread.sleep(5000);
 	    driver.close();

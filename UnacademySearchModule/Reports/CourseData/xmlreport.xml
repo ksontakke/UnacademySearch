@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="125.283968">
+<testcase classname="Unacademy Website course data" name="User wants course schedule" time="35.470837">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.CourseInfo.user_should_see_course_schedule(CourseInfo.java:58)&#13;&#10;&#9;at ✽.Then User should see course schedule(src/test/resources/Feature/CourseData.feature:9)&#13;&#10;"><![CDATA[Given User is on unacademy course page......................................passed
+When User click on Schedule.................................................passed
+Then User should see course schedule........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.CourseInfo.user_should_see_course_schedule(CourseInfo.java:58)
+	at ✽.Then User should see course schedule(src/test/resources/Feature/CourseData.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Unacademy Website course data" name="User wants to see saved course" time="33.048451">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.CourseInfo.user_should_see_saved_course(CourseInfo.java:79)&#13;&#10;&#9;at ✽.Then User should see saved course(src/test/resources/Feature/CourseData.feature:14)&#13;&#10;"><![CDATA[Given User is on unacademy course page......................................passed
+When User click on Saved....................................................passed
+Then User should see saved course...........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.CourseInfo.user_should_see_saved_course(CourseInfo.java:79)
+	at ✽.Then User should see saved course(src/test/resources/Feature/CourseData.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="Unacademy Website course data" name="User wants to see enrolled courses" time="29.99571">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.CourseInfo.user_should_see_enrolled_courses(CourseInfo.java:100)&#13;&#10;&#9;at ✽.Then User should see enrolled courses(src/test/resources/Feature/CourseData.feature:19)&#13;&#10;"><![CDATA[Given User is on unacademy course page......................................passed
+When User click on Enrollments..............................................passed
+Then User should see enrolled courses.......................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.CourseInfo.user_should_see_enrolled_courses(CourseInfo.java:100)
+	at ✽.Then User should see enrolled courses(src/test/resources/Feature/CourseData.feature:19)
+]]></failure>
+</testcase>
+<testcase classname="Unacademy Website course data" name="User wants to see course information" time="26.76897">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()='My library']&quot;}&#10;  (Session info: chrome=90.0.4430.93)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'&#10;System info: host: 'LIN25003818', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\kbaburao\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 280696092d5c0c29254b3168cecf1152&#10;*** Element info: {Using=xpath, value=//a[normalize-space()='My library']}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at stepDefinition.CourseInfo.user_click_on_My_Library(CourseInfo.java:108)&#13;&#10;&#9;at ✽.When User click on My Library(src/test/resources/Feature/CourseData.feature:23)&#13;&#10;"><![CDATA[Given User is on unacademy course page......................................passed
+When User click on My Library...............................................failed
+Then User should see course information.....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='My library']"}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LIN25003818', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\kbaburao\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53948}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 280696092d5c0c29254b3168cecf1152
+*** Element info: {Using=xpath, value=//a[normalize-space()='My library']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepDefinition.CourseInfo.user_click_on_My_Library(CourseInfo.java:108)
+	at ✽.When User click on My Library(src/test/resources/Feature/CourseData.feature:23)
+]]></failure>
+</testcase>
+</testsuite>

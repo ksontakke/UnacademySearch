@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="34.635056">
+<testcase classname="Unacademy Website invalid search" name="User search for invalid data" time="34.635056">
+<system-out><![CDATA[Given User is on unacademy Search course Page...............................passed
+When User enters invalid search data........................................passed
+Then User should see blank window...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

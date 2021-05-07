@@ -16,7 +16,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import PageFactoryPOM.SearchPOM;
@@ -49,7 +48,7 @@ public class CourseEducator
 		
 		
 		File credentials=new File("C:\\Users\\kbaburao\\Desktop\\SeleniumSoftware\\chemistry.xlsx");
-        FileInputStream fis = new FileInputStream(credentials);
+        FileInputStream fis = new FileInputStream(credentials);	//get the data from External file
         XSSFWorkbook wb = new XSSFWorkbook(fis);
         XSSFSheet sheet1 = wb.getSheetAt(0);
         String CourseName=sheet1.getRow(0).getCell(0).getStringCellValue();
@@ -65,7 +64,7 @@ public class CourseEducator
 	public void user_clicks_on_Course_Hyperlink() throws Throwable 
 	{
 		Thread.sleep(3000);
-		Actions act = new Actions(driver);
+		Actions act = new Actions(driver);		// Click using keyboard action
 		act.sendKeys(Keys.ENTER).perform();	
 	}
 	
@@ -75,7 +74,7 @@ public class CourseEducator
 	{
 		Thread.sleep(7000);
 		boolean course=driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/h4[1]")).isDisplayed();
-		Assert.assertTrue(course);
+		Assert.assertTrue(course);		// check if you are on correct page or not
 		Thread.sleep(7000);
 	    driver.close();
 	}
@@ -95,7 +94,7 @@ public class CourseEducator
 	@When("^User enters Educators name$")
 	public void user_enters_Educators_name(DataTable arg1) throws Throwable 
 	{
-		List<List<String>> data = arg1.raw();
+		List<List<String>> data = arg1.raw();		//get the data from feature file
 		SearchPOM sp = PageFactory.initElements(driver, SearchPOM.class);
 		sp.name(data.get(0).get(0));
 		
@@ -117,7 +116,7 @@ public class CourseEducator
 	{
 		Thread.sleep(7000);
 		boolean course=driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/h4[1]")).isDisplayed();
-		Assert.assertTrue(course);
+		Assert.assertTrue(course);		// check if you are on correct page or not
 		Thread.sleep(7000);
 		driver.close();
 	}

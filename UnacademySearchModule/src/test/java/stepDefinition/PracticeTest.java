@@ -67,7 +67,7 @@ public class PracticeTest
 	{
 		Thread.sleep(8000);
 		boolean test = driver.findElement(By.xpath("//h1[contains(text(),'IIT JEE Test series')]")).isDisplayed();
-	    Assert.assertTrue(test);
+	    Assert.assertTrue(test);	// Check if the user able to see the available test series or not
 	    System.out.println("Test series available :"+test);
 	    driver.quit();
 	}

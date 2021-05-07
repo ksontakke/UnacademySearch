@@ -44,7 +44,7 @@ public class OtherLinksTest
 	public void user_clicks_on_Facebook_logo() throws Throwable 
 	{
 		SearchPOM sp = PageFactory.initElements(driver, SearchPOM.class);
-		sp.faceBook();
+		sp.faceBook();		// navigates to the Unacademy facebook page
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		Thread.sleep(5000);
 	}
@@ -63,7 +63,7 @@ public class OtherLinksTest
 	{
 		SearchPOM sp = PageFactory.initElements(driver, SearchPOM.class);
 		Thread.sleep(6000);
-		sp.seeMore();	
+		sp.seeMore();		// Checking for more results	
 	}
 
 	@Test(priority=6)
@@ -87,10 +87,10 @@ public class OtherLinksTest
 	{
 	    driver.findElement(By.xpath("//div[@class='EducatorProfile__Wrapper-sc-1eikreg-0 bcHiYv']//div[2]//div[1]//div[1]//div[1]//a[1]//div[1]//picture[1]//img[1]")).click();
 	    Thread.sleep(7000);
-	    driver.findElement(By.xpath("//h6[contains(text(),'PREVIEW')]")).click();
+	    driver.findElement(By.xpath("//h6[contains(text(),'PREVIEW')]")).click();	// play preview video
 	    Thread.sleep(25000);
 	    boolean hindi=driver.findElement(By.xpath("//span[contains(text(),'Hindi')]")).isDisplayed();
-	    Assert.assertTrue(hindi);
+	    Assert.assertTrue(hindi);		// check if the user is on report page or not
 	    System.out.println("Preview video available :"+hindi);
 	    driver.close();
 	}

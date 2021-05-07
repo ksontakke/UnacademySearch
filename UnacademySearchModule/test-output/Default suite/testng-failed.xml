@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="stepDefinition.searchStepDef">
+      <class name="TestRunner.testRunner">
         <methods>
-          <include name="user_is_on_a_Course_page"/>
-          <include name="user_should_see_the_free_courses"/>
-          <include name="user_is_on_the_Course_page"/>
-          <include name="user_click_on_Quick_cources"/>
-          <include name="user_click_on_free_classes_and_test"/>
-          <include name="user_is_on_a_Course_window"/>
-          <include name="user_click_on_Syllabus"/>
-          <include name="user_should_see_the_Quick_cources"/>
-          <include name="user_should_see_the_course_syllabus"/>
+          <include name="setUpClass"/>
+          <include name="feature"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- stepDefinition.searchStepDef -->
+      </class> <!-- TestRunner.testRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
