@@ -1,0 +1,116 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2922235300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CourseInfo.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2394924200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InvalidSearchTest.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User wants see test series and practices",
+        "description": "",
+        "id": "searching-for-courses-and-test-series;user-wants-see-test-series-and-practices",
+        "after": [
+          {
+            "result": {
+              "duration": 5110750900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CourseInfo.closeBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5184298800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InvalidSearchTest.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7306771300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the course window",
+            "match": {
+              "location": "PracticeTest.user_is_on_the_course_window()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9709224900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on Test series and Practices",
+            "match": {
+              "location": "PracticeTest.user_click_on_Test_series_and_Practices()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4647847400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click on Test series",
+            "match": {
+              "location": "PracticeTest.user_click_on_Test_series()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9224061200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should see the test pracices and series",
+            "match": {
+              "location": "PracticeTest.user_should_see_the_test_pracices_and_series()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@testseries"
+          }
+        ]
+      }
+    ],
+    "name": "Searching for courses and test series",
+    "description": "",
+    "id": "searching-for-courses-and-test-series",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/TestPractice.feature"
+  }
+]

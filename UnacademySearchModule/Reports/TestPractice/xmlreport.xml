@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="46.500114">
+<testcase classname="Searching for courses and test series" name="User wants see test series and practices" time="46.500114">
+<system-out><![CDATA[Given User is on the course window..........................................passed
+When User click on Test series and Practices................................passed
+And User click on Test series...............................................passed
+Then User should see the test pracices and series...........................passed
+]]></system-out>
+</testcase>
+</testsuite>
